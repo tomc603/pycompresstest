@@ -28,7 +28,7 @@ if __name__ == '__main__':
             print(' Deomcpress time: %0.3f' % (time.time() - st))
             f.close()
         elif options.compfile.endswith('.gz'):
-            f = gzip.GzipFile(processitem, 'rb')
+            f = gzip.GzipFile(options.compfile, 'rb')
             f.read()
             print(' Deomcpress time: %0.3f' % (time.time() - st))
             f.close()
